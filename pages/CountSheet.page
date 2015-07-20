@@ -3,10 +3,10 @@
   <h1>Inventory Count Sheet</h1>
   <apex:form >
       <apex:dataTable value="{!products}" var="pitem" rowClasses="odd,even">
-          <apex:column headerValue="Product">
+          <apex:column headerValue="Product Name">
               <apex:outputText value="{!pitem.Name}"/>
           </apex:column>
-          <apex:column headerValue="Inventory">
+          <apex:column headerValue="Inventory Count">
               <apex:outputField value="{!pitem.Quantity__c}">
                   <apex:inlineEditSupport event="ondblclick" showOnEdit="update"/>
               </apex:outputfield>
